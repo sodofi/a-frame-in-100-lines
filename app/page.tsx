@@ -5,15 +5,15 @@ import { NEXT_PUBLIC_URL } from './config';
 const frameMetadata = getFrameMetadata({
   buttons: [
     {
-      label: 'Story time!',
+      label: 'Go back',
     },
     {
       action: 'link',
-      label: 'Link to Google',
+      label: 'Click to donate',
       target: 'https://www.google.com',
     },
     {
-      label: 'Redirect to pictures',
+      label: 'Next project',
       action: 'post_redirect',
     },
   ],
@@ -22,7 +22,7 @@ const frameMetadata = getFrameMetadata({
     aspectRatio: '1:1',
   },
   input: {
-    text: 'Tell me a boat story',
+    text: 'Donate to your fave PGs',
   },
   postUrl: `${NEXT_PUBLIC_URL}/api/frame`,
 });
